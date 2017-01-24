@@ -1,67 +1,71 @@
 h1{
   color: pink;
  }
-html { font-size: 1px; }
+@for $n from 1 to 2 {
+  @for $b from 0 to 22{
+    .big-hold:nth-child(#{$b}) .bar:nth-child(#{$n}){-webkit-animation: keys 3s infinite ease #{$n*0.05*$b}s; background: hsla($b*20, 100%, 50%, 1);}
+  }
+}
 body {
-  margin: 0;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 30rem;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.6)), url(http://alluretouch.com/wp-content/uploads/2015/09/minimalist-art.jpg);
-  background-position: 50% 15%;
-  background-size: cover;
+  overflow: hidden;
+  margin-top: 200px;
+  background: #000;
+  margin-left: 600px;
 }
-
-main {
-  position: relative;
-  display: flex;
+@-webkit-keyframes keys {
+  0%{  
+    transform: rotate(0deg);
+    transform-origin: 0% 50%;
+  }
+  50%{  
+    transform: rotate(180deg);
+    transform-origin: 50% 2.5px;
+  }
+  100%{  
+    transform: rotate(360deg) translate(300px);
+    transform-origin: 20% 50%;
+  }
 }
-
-h1 { margin: 0; }
-h1, .marker {
-  transform: translateX(0);
-  animation-timing-function: cubic-bezier(0.15,-0.01, 0.58, 1);
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+.bar {
+  width: 5px;
+  height: 100px;
+  background: red;
 }
-
-.marker {
-  position: absolute; top: 4px; left: -3px;
-  height: 3px; width: 40px;
-  background-color: black;
-  animation-name: marker;
+.hold {
+  width:300px;
+  height: 100px;
+  margin: 0 auto;
 }
-
-.r { margin-left: 1rem;   animation-name: r; }
-.e1 { margin-left: 7rem; animation-name: e1; }
-.s1 { margin-left: 16rem; animation-name: s1; }
-.s2 { margin-left: 21rem; animation-name: s2; }
-.e2 { margin: 0 36rem 0 42rem; animation-name: e2; }
-
-@keyframes r { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(35rem); }
+.hold:nth-child(2){
+  transform: rotate(90deg) translateX(-100px);
 }
-@keyframes e1 { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(75rem); }
+.hold:nth-child(3){
+  transform: rotate(45deg) translate(-140px,-140px);
 }
-@keyframes s1 { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(81rem); }
+.hold:nth-child(4){
+  transform: rotate(-45deg) translate(210px,-210px);
+  transform-origin: 50% 50px;
 }
-@keyframes s2 { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(71rem); }
+.holds {
+  width: 5px;
+  height: 100px;
+  //background: black;
+  float: left;
 }
-@keyframes e2 { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(34rem); }
+.holds:nth-child(2){
+  float: right;
+  transform: rotate(180deg);
 }
-@keyframes marker { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(337rem); }
+.big-hold {
+  width: 400px;
+  height: 400px;
+  float: left;
+  margin-left: -400px;
 }
+/*.center {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-right:300px;
+}*/
+ 
