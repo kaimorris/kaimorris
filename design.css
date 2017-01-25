@@ -1,71 +1,23 @@
 h1{
   color: pink;
  }
-@for $n from 1 to 2 {
-  @for $b from 0 to 22{
-    .big-hold:nth-child(#{$b}) .bar:nth-child(#{$n}){-webkit-animation: keys 3s infinite ease #{$n*0.05*$b}s; background: hsla($b*20, 100%, 50%, 1);}
-  }
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
 }
-body {
-  overflow: hidden;
-  margin-top: 200px;
-  background: #000;
-  margin-left: 600px;
+
+.loader{
+  height: 10px;
+  background-color: #000;
+  position: absolute;
 }
-@-webkit-keyframes keys {
-  0%{  
-    transform: rotate(0deg);
-    transform-origin: 0% 50%;
-  }
-  50%{  
-    transform: rotate(180deg);
-    transform-origin: 50% 2.5px;
-  }
-  100%{  
-    transform: rotate(360deg) translate(300px);
-    transform-origin: 20% 50%;
-  }
+
+.content{
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  display: none;
 }
-.bar {
-  width: 5px;
-  height: 100px;
-  background: red;
-}
-.hold {
-  width:300px;
-  height: 100px;
-  margin: 0 auto;
-}
-.hold:nth-child(2){
-  transform: rotate(90deg) translateX(-100px);
-}
-.hold:nth-child(3){
-  transform: rotate(45deg) translate(-140px,-140px);
-}
-.hold:nth-child(4){
-  transform: rotate(-45deg) translate(210px,-210px);
-  transform-origin: 50% 50px;
-}
-.holds {
-  width: 5px;
-  height: 100px;
-  //background: black;
-  float: left;
-}
-.holds:nth-child(2){
-  float: right;
-  transform: rotate(180deg);
-}
-.big-hold {
-  width: 400px;
-  height: 400px;
-  float: left;
-  margin-left: -400px;
-}
-/*.center {
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
-  margin-right:300px;
-}*/
- 
