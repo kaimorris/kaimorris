@@ -21,3 +21,122 @@ body{
   background: #fff;
   display: none;
 }
+.container { 
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  color: #111;
+}
+
+.logo { font-size: 6rem; }
+.mark { 
+  border-bottom: 4px solid #111; 
+  width: 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 0.25rem;
+  transform: translate3d(0, 0, 0);
+  animation: mark-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.a,
+.i1,
+.m1,
+.o2,
+.r2 { will-change: margin-left, margin-right; }
+
+.r { 
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  animation: r-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.i1 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  animation: i1-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.m1 { 
+  margin-left: 1rem;
+  margin-right: 1rem; 
+  animation: m1-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.o2 { 
+  margin-left: 1rem;
+  margin-right: 1rem;
+  animation: o2-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.r2 { 
+  margin-left: 2rem;
+  margin-right: 3rem;
+  animation: r2-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+
+@keyframes mark-anim {
+  0%, 25%, 100% { 
+    left: 1.5%;
+  }
+  50%, 75%  {
+    left: 92%;
+  }
+}
+
+
+@keyframes a-anim {
+  0%, 25%, 100% { 
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+  50%, 75%  {
+    margin-left: 3rem;
+    margin-right: 2rem;
+  }
+}
+
+@keyframes i1-anim {
+  0%, 25%, 100% { 
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  50%, 75%  {
+    margin-left: 1rem;
+    margin-right: 1rem; 
+  }
+}
+
+@keyframes m1-anim {
+  0%, 25%, 100% { 
+    margin-left: 1rem;
+    margin-right: 1rem; 
+  }
+  50%, 75%  {
+    margin-left: 1rem;
+    margin-right: 1rem;  
+  }
+}
+
+@keyframes o2-anim {
+  0%, 25%, 100% { 
+    margin-left: 1rem;
+    margin-right: 2rem; 
+  }
+  50%, 75%  {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@keyframes r2-anim {
+  0%, 25%, 100%   { 
+    margin-left: 2rem;
+    margin-right: 3rem;
+  }
+  50%, 75% {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+}
