@@ -11,14 +11,14 @@ body {
   margin-top: 5%;
 }
 h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   text-align: center;
   letter-spacing: 0.5em;
 }
 
 th { 
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   padding-left: 50px;
   font-size: 1em;
 }
@@ -39,7 +39,7 @@ body{
   width: 100vw;
   height: 100vh;
   
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   color: black;
   font-weight: 400;
   font-size: 1.000rem;
