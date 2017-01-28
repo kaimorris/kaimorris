@@ -205,54 +205,10 @@ h1, .marker {
   background-color: black;
   animation-name: marker;
 }
-.k { margin-left: 2rem;   animation-name: k; }
-.a { margin-left: 1rem;   animation-name: a; }
-.i1 { margin-left: 7rem; animation-name: i1; }
-.m1 { margin-left: 16rem; animation-name: m1; }
-.o2 { margin-left: 21rem; animation-name: o2; }
-.r2 { margin: 0 28rem; animation-name: r2; }
-.r3 { margin: 0 35rem; animation-name: r3; }
-.i3 { margin: 0 36rem 0 30rem; animation-name: i3; }
-.s4 { margin: 0 40rem 0 20rem; animation-name: s4; }
+.kaimorris { margin-left: 2rem;   animation-name: kaimorris; }
 
+}
 
-@keyframes k { 
+@keyframes kaimorris { 
   0%, 20% { transform: translateX(0); }
   50%, 70% { transform: translateX(25rem); }
-}
-@keyframes a { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(40rem); }
-}
-@keyframes i1 { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(70rem); }
-}
-@keyframes m1 { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(81rem); }
-}
-@keyframes o2 { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(65rem); }
-}
-@keyframes r2 { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(35rem); }
-}
-@keyframes r3 { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(-20rem); }
-}
-@keyframes i3 { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(-80rem); }
-}
-@keyframes s4 { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(-140rem); }
-}
-@keyframes marker { 
-  0%, 20% { transform: translateX(0); }
-  50%, 70% { transform: translateX(337rem); }
-}
