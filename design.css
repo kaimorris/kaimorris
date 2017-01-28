@@ -50,7 +50,7 @@ h1 {
 
 
 
-.kaiMorris {
+.letterDrop {
   position: relative;
   top: 0.60em;  
   display: inline-block;
@@ -58,10 +58,10 @@ h1 {
   letter-spacing: 0.5em;
   opacity: 0.8;
   transform: rotateX(-90deg);
-  animation: kaiMorris 1.2s ease 1 normal forwards;
+  animation: kaimorris 1.2s ease 1 normal forwards;
 }
 
-@keyframes kaiMorris {
+@keyframes kaimorris {
     10% {
         opacity: 0.5;
     }
