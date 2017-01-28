@@ -45,10 +45,8 @@ h1 {
   font-family: 'Raleway';
   font-weight: 400;
   font-size: 2.4em;
-  color: #9A12B3;
+  color: black;
 }
-
-
 
 .letterDrop {
   position: relative;
@@ -79,6 +77,6 @@ h1 {
 
 
 span:nth-child(2n) {
-  color: #663399;
+  color: black;
 }
 
