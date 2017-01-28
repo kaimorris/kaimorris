@@ -1,12 +1,12 @@
 ;(function($) {
 
-$.fn.kaiMorris = function() {
+$.fn.letterDrop = function() {
   // Chainability
   return this.each( function() { 
   
   var obj = $( this );
   
-  var Morris = {
+  var drop = {
     arr : obj.text().split( '' ),
     
     range : {
@@ -15,13 +15,13 @@ $.fn.kaiMorris = function() {
     },
     
     styles : function() {
-      var MorrisDelays = '\n', addCSS;
+      var dropDelays = '\n', addCSS;
       
        for ( i = this.range.min; i <= this.range.max; i++ ) {
-         morrisDelays += '.ld' + i + ' { animation-delay: 1.' + i + 's; }\n';  
+         dropDelays += '.ld' + i + ' { animation-delay: 1.' + i + 's; }\n';  
        }
       
-        addCSS = $( '<style>' + morrisDelays + '</style>' );
+        addCSS = $( '<style>' + dropDelays + '</style>' );
         $( 'head' ).append( addCSS );
     },
     
@@ -31,12 +31,12 @@ $.fn.kaiMorris = function() {
       
       $.each( this.arr, function( index, value ) {
 
-        dp = dp.randomInt( morris.range.min, morris.range.max );
+        dp = dp.randomInt( drop.range.min, drop.range.max );
         
         if ( value === ' ' )
           value = '&nbsp';
         
-          obj.append( '<span class="kaiMorris ld' + dp + '">' + value + '</span>' );
+          obj.append( '<span class="letterDrop ld' + dp + '">' + value + '</span>' );
         
       });
           
@@ -49,11 +49,11 @@ $.fn.kaiMorris = function() {
   
   
   // Create styles
-  morris.styles();
+  drop.styles();
 
 
     // Initialise
-    morris.main();
+    drop.main();
   });
 
 };
@@ -62,5 +62,5 @@ $.fn.kaiMorris = function() {
 
 
 // USAGE
-$( 'h1' ).kaiMorris();
+$( 'h1' ).letterDrop();
 
