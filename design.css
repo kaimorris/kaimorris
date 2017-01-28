@@ -27,3 +27,59 @@ table {
   margin-left: auto;
   margin-top: 15px;
 }
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  background: #EEEEEE;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 2.4em;
+  color: #9A12B3;
+}
+
+
+
+.KAIMORRIS {
+  position: relative;
+  top: 0.60em;  
+  display: inline-block;
+  text-transform: uppercase; 
+  letter-spacing: 0.5em;
+  opacity: 0.8;
+  transform: rotateX(-90deg);
+  animation: KAIMORRIS 1.2s ease 1 normal forwards;
+}
+
+@keyframes KAIMORRIS {
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 0.8;
+        top: 3.75em;
+        transform: rotateX(-360deg);
+    }
+    100% {
+        opacity: 1;
+        top: 4.50em;
+        transform: rotateX(360deg);
+    }
+}
+
+
+span:nth-child(2n) {
+  color: #663399;
+}
+
