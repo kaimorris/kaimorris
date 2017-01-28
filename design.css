@@ -59,7 +59,7 @@ h1 {
   animation: kaimorris 1.2s ease 1 normal forwards;
 }
 
-@keyframes kaimorris {
+@keyframes letterDrop {
     10% {
         opacity: 0.5;
     }
