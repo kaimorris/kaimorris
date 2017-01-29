@@ -174,3 +174,4 @@ a:hover{
 .link6:hover:after {
   transform: translate3d(0,0,0);
 }
+/*this code is what creates the hover links from: http://codepen.io/jwv/pen/adONxo I tweaked and modified the code to fit with the disign of my webiste*/
