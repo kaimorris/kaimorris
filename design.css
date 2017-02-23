@@ -8,7 +8,7 @@ body {
   margin-right: auto;
   background-color: transparent;
   border: 2px solid black;
-  margin-top: 0%;
+  margin-top: 0% auto;
 }
 h1 {
   font-family: 'Work Sans', sans-serif;
@@ -25,7 +25,7 @@ th {
 table {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 0px;
+  margin-top: 0px auto;
 }
 html {
   font-size: 16px;
